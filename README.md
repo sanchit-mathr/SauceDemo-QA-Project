@@ -19,9 +19,7 @@ The goal was to validate critical workflows including **Login, Product Browsing,
 
 📦 SauceDemo-QA-Project
  ┣ 📂 Manual_Testing
- ┃ ┣ 📜 Test_Cases.xlsx
- ┃ ┣ 📜 Bug_Report.xlsx
- ┃ ┗ 📜 Test_Summary_Report.docx
+ ┃ ┣ 📜 SauceDemo_Manual_Testing_Project.csv
  ┣ 📂 Automation_Testing
  ┃ ┣ 📂 test_scripts
  ┃ ┃ ┣ 📜 test_login.py
