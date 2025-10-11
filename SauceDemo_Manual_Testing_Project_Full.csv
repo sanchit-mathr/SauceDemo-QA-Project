@@ -1,0 +1,76 @@
+Test Case ID,Module / Feature,Test Scenario,Preconditions,Test Steps,Expected Result,Actual Result,Status,Severity,Bug ID / Comments
+TC001,Login,Valid Login,User has valid credentials,"Enter valid username & password, click login",User should be redirected to Products page,Redirect successful,Pass,Major,—
+TC002,Login,Invalid Password,Valid username,Enter valid username and invalid password,Error message should appear,Error message displayed,Pass,Major,BUG-001: Incorrect password message alignment
+TC003,Login,Locked User,User account is locked,Try to login with locked user credentials,System should deny access with message,Access denied message shown,Pass,Major,—
+TC004,Login,Blank Fields,None,Leave username and password blank and click login,Proper error message should be displayed,Error displayed,Pass,Minor,—
+TC005,Login,Multiple Failed Attempts,User has credentials,Enter wrong password multiple times,Appropriate warning should appear,Warning displayed after 3 attempts,Pass,Minor,BUG-002: Delay in error appearance
+TC006,Login,Password Masking,Login page open,Type password and observe field,Password should be masked,Password masked,Pass,Minor,—
+TC007,Login,Session Expiry,User logged in,Stay idle for 15 minutes,Session should expire automatically,Session expired after 20 minutes,Fail,Major,BUG-003: Session timeout too long
+TC008,Login,Valid Login,User has valid credentials,"Enter valid username & password, click login",User should be redirected to Products page,Redirect successful,Pass,Major,—
+TC009,Login,Invalid Password,Valid username,Enter valid username and invalid password,Error message should appear,Error message displayed,Pass,Major,BUG-001: Incorrect password message alignment
+TC010,Login,Locked User,User account is locked,Try to login with locked user credentials,System should deny access with message,Access denied message shown,Pass,Major,—
+TC011,Product Browsing,Page Load,User logged in,Navigate to product page,All products should load,Loaded in 2.5s,Pass,Minor,—
+TC012,Product Browsing,Product Details View,Products listed,Click any product title,User should see detailed info,Details visible,Pass,Minor,—
+TC013,Product Browsing,Sort A-Z,Product list available,Select A-Z sort filter,Products sorted alphabetically,Sorted correctly,Pass,Minor,—
+TC014,Product Browsing,Sort Z-A,Product list available,Select Z-A sort filter,Products sorted alphabetically descending,Sorted correctly,Pass,Minor,—
+TC015,Product Browsing,Sort by Price Low-High,Product list available,Select low-high price filter,Prices sorted ascending,Sorted correctly,Pass,Minor,—
+TC016,Product Browsing,Sort by Price High-Low,Product list available,Select high-low price filter,Prices sorted descending,Sorted correctly,Pass,Minor,—
+TC017,Product Browsing,Broken Image Check,Product list available,Check all product images,No broken image links,2 images missing,Fail,Minor,BUG-004: Missing product images
+TC018,Product Browsing,Filter Category,Products listed,Apply filter by category,Filtered products should appear,Filtered correctly,Pass,Minor,—
+TC019,Product Browsing,Page Load,User logged in,Navigate to product page,All products should load,Loaded in 2.5s,Pass,Minor,—
+TC020,Product Browsing,Product Details View,Products listed,Click any product title,User should see detailed info,Details visible,Pass,Minor,—
+TC021,Product Browsing,Sort A-Z,Product list available,Select A-Z sort filter,Products sorted alphabetically,Sorted correctly,Pass,Minor,—
+TC022,Product Browsing,Sort Z-A,Product list available,Select Z-A sort filter,Products sorted alphabetically descending,Sorted correctly,Pass,Minor,—
+TC023,Add to Cart,Add Single Item,User on products page,Click Add to Cart on one product,Item should appear in cart,Item visible in cart,Pass,Major,—
+TC024,Add to Cart,Add Multiple Items,User on products page,Add multiple products to cart,All items appear in cart,All items visible,Pass,Major,—
+TC025,Add to Cart,Remove Item,Cart contains item,Click Remove button,Item should disappear from cart,Item removed successfully,Pass,Major,—
+TC026,Add to Cart,Cart Badge Update,User adds multiple items,Add 3 products to cart,Badge should show 3,Badge shows 2,Fail,Major,BUG-005: Badge count incorrect
+TC027,Add to Cart,Cart Persistence After Refresh,User has items in cart,Refresh page,Cart items should persist,Items persist,Pass,Minor,—
+TC028,Add to Cart,Empty Cart Message,Cart empty,Go to cart,Message displays empty cart,Message visible,Pass,Minor,—
+TC029,Add to Cart,Add Single Item,User on products page,Click Add to Cart on one product,Item should appear in cart,Item visible in cart,Pass,Major,—
+TC030,Add to Cart,Add Multiple Items,User on products page,Add multiple products to cart,All items appear in cart,All items visible,Pass,Major,—
+TC031,Add to Cart,Remove Item,Cart contains item,Click Remove button,Item should disappear from cart,Item removed successfully,Pass,Major,—
+TC032,Add to Cart,Cart Badge Update,User adds multiple items,Add 3 products to cart,Badge should show 3,Badge shows 2,Fail,Major,BUG-005: Badge count incorrect
+TC033,Add to Cart,Cart Persistence After Refresh,User has items in cart,Refresh page,Cart items should persist,Items persist,Pass,Minor,—
+TC034,Add to Cart,Empty Cart Message,Cart empty,Go to cart,Message displays empty cart,Message visible,Pass,Minor,—
+TC035,Checkout,Valid Checkout,User has items in cart,"Go to checkout, fill valid info, click continue",Order overview page should appear,Overview displayed,Pass,Major,—
+TC036,Checkout,Missing First Name,User on checkout form,Leave first name blank,Error message should appear,Error displayed,Pass,Major,—
+TC037,Checkout,Missing Last Name,User on checkout form,Leave last name blank,Error message should appear,Error displayed,Pass,Major,—
+TC038,Checkout,Missing Postal Code,User on checkout form,Leave postal code empty,Error message should appear,Error displayed,Pass,Major,—
+TC039,Checkout,Price Calculation,Multiple items in cart,"Verify subtotal, tax, total",Calculation accurate,Mismatch found in tax,Fail,Critical,BUG-006: Incorrect tax formula
+TC040,Checkout,Order Completion,User on overview page,Click Finish,Order success page should appear,Success message displayed,Pass,Major,—
+TC041,Checkout,Cancel Checkout,User on checkout page,Click Cancel button,Return to cart page,Returned to cart,Pass,Minor,—
+TC042,Checkout,Valid Checkout,User has items in cart,"Go to checkout, fill valid info, click continue",Order overview page should appear,Overview displayed,Pass,Major,—
+TC043,Checkout,Missing First Name,User on checkout form,Leave first name blank,Error message should appear,Error displayed,Pass,Major,—
+TC044,Checkout,Missing Last Name,User on checkout form,Leave last name blank,Error message should appear,Error displayed,Pass,Major,—
+TC045,Checkout,Missing Postal Code,User on checkout form,Leave postal code empty,Error message should appear,Error displayed,Pass,Major,—
+TC046,Checkout,Price Calculation,Multiple items in cart,"Verify subtotal, tax, total",Calculation accurate,Mismatch found in tax,Fail,Critical,BUG-006: Incorrect tax formula
+TC047,Checkout,Order Completion,User on overview page,Click Finish,Order success page should appear,Success message displayed,Pass,Major,—
+TC048,Checkout,Cancel Checkout,User on checkout page,Click Cancel button,Return to cart page,Returned to cart,Pass,Minor,—
+TC049,Checkout,Valid Checkout,User has items in cart,"Go to checkout, fill valid info, click continue",Order overview page should appear,Overview displayed,Pass,Major,—
+TC050,Logout / Session,Logout Functionality,User logged in,Click logout,User should be redirected to login page,Redirected successfully,Pass,Minor,—
+TC051,Logout / Session,Restricted Access After Logout,User logged out,Try accessing internal page via URL,System should redirect to login,Redirected properly,Pass,Major,—
+TC052,Logout / Session,Session Timeout,User logged in,Stay idle for session period,Session expires automatically,Session timeout occurred,Pass,Major,—
+TC053,Logout / Session,Logout Functionality,User logged in,Click logout,User should be redirected to login page,Redirected successfully,Pass,Minor,—
+TC054,Logout / Session,Restricted Access After Logout,User logged out,Try accessing internal page via URL,System should redirect to login,Redirected properly,Pass,Major,—
+TC055,UI / Usability,Button Alignment,Product page open,Check Add to Cart button alignment,All buttons aligned properly,One button misaligned,Fail,Minor,BUG-007: UI alignment issue
+TC056,UI / Usability,Color Consistency,All pages loaded,Check background and font color,Consistent color scheme,Consistent,Pass,Minor,—
+TC057,UI / Usability,Error Message Clarity,Trigger login error,Check visibility & readability,Message clear and readable,Readable,Pass,Minor,—
+TC058,UI / Usability,Responsiveness,Site loaded,Resize window to mobile/tablet,Layout adapts properly,Adapted correctly,Pass,Minor,—
+TC059,UI / Usability,Button Alignment,Product page open,Check Add to Cart button alignment,All buttons aligned properly,One button misaligned,Fail,Minor,BUG-007: UI alignment issue
+TC060,UI / Usability,Color Consistency,All pages loaded,Check background and font color,Consistent color scheme,Consistent,Pass,Minor,—
+TC061,UI / Usability,Error Message Clarity,Trigger login error,Check visibility & readability,Message clear and readable,Readable,Pass,Minor,—
+TC062,UI / Usability,Responsiveness,Site loaded,Resize window to mobile/tablet,Layout adapts properly,Adapted correctly,Pass,Minor,—
+TC063,Performance / Security,Page Load Speed,User logged in,Measure load time of products page,Should load under 3s,2.4s,Pass,Minor,—
+TC064,Performance / Security,SQL Injection,Login page,Enter SQL command in username field,System should prevent login,Blocked successfully,Pass,Critical,—
+TC065,Performance / Security,XSS Input Check,Checkout page,Enter <script> in name field,Input should be sanitized,Accepted script tags,Fail,Critical,BUG-008: XSS vulnerability
+TC066,Performance / Security,Rapid Click Test,Cart page,Click add/remove rapidly,System should handle,No errors,Pass,Minor,—
+TC067,Performance / Security,Page Load Speed,User logged in,Measure load time of products page,Should load under 3s,2.4s,Pass,Minor,—
+TC068,Performance / Security,SQL Injection,Login page,Enter SQL command in username field,System should prevent login,Blocked successfully,Pass,Critical,—
+TC069,Performance / Security,XSS Input Check,Checkout page,Enter <script> in name field,Input should be sanitized,Accepted script tags,Fail,Critical,BUG-008: XSS vulnerability
+TC070,Performance / Security,Rapid Click Test,Cart page,Click add/remove rapidly,System should handle,No errors,Pass,Minor,—
+TC071,End-to-End / Regression,Complete Flow 1,User login → add items → checkout,User with valid account,Follow complete flow,Order should complete successfully,Pass,Critical,—
+TC072,End-to-End / Regression,Complete Flow 2,Login → browse → add → remove → checkout,User with valid account,Follow complete flow with remove step,Order completes accurately,Pass,Critical,—
+TC073,End-to-End / Regression,Complete Flow 1,User login → add items → checkout,User with valid account,Follow complete flow,Order should complete successfully,Pass,Critical,—
+TC074,End-to-End / Regression,Complete Flow 2,Login → browse → add → remove → checkout,User with valid account,Follow complete flow with remove step,Order completes accurately,Pass,Critical,—
+TC075,End-to-End / Regression,Complete Flow 1,User login → add items → checkout,User with valid account,Follow complete flow,Order should complete successfully,Pass,Critical,—
