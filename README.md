@@ -9,8 +9,8 @@ The goal was to validate critical workflows including **Login, Product Browsing,
 
 ## 🛠 Tools & Technologies
 - Manual Testing: Test Case Design, Bug Reports, Test Summary
-- Automation: Selenium WebDriver, Python (Pytest) / Java (TestNG)
-- Bug Tracking: Jira / Excel
+- Automation: Selenium WebDriver, Python (Pytest)
+- Bug Tracking: Excel
 - Version Control: Git & GitHub
 
 ---
